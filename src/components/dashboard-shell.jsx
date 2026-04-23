@@ -97,7 +97,7 @@ export function DashboardShell({
       <div className="mx-auto flex max-w-[1400px] gap-8 px-4 py-8 sm:px-6 lg:px-10">
         <aside className="sticky top-8 hidden h-[calc(100dvh-4rem)] w-64 shrink-0 flex-col rounded-2xl border border-foreground/5 bg-sidebar p-5 lg:flex">
           <Link to="/" className="mb-8 text-lg font-bold tracking-tight">
-            EduVibe<span className="text-glow">.</span>
+            EduVibe
           </Link>
           <div className="mb-1 flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
             <ShieldCheck className="size-3.5" />
@@ -139,7 +139,7 @@ export function DashboardShell({
           {/* mobile top bar */}
           <div className="mb-6 flex items-center justify-between lg:hidden">
             <Link to="/" className="text-lg font-bold">
-              EduVibe<span className="text-glow">.</span>
+              EduVibe
             </Link>
             <button
               onClick={() => {

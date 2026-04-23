@@ -133,7 +133,7 @@ export function AuthShell({
       <div className="pointer-events-none absolute left-1/2 top-[-10%] h-[700px] w-[900px] -translate-x-1/2 rounded-full bg-glow/10 blur-[140px]" />
       <div className="relative mx-auto flex min-h-dvh max-w-md flex-col items-center justify-center px-5 py-16">
         <Link to="/" className="mb-10 text-2xl font-bold tracking-tight">
-          EduVibe<span className="text-glow">.</span>
+          EduVibe
         </Link>
         <div className="w-full rounded-3xl border border-foreground/5 bg-card p-8 shadow-[0_8px_30px_rgba(0,0,0,0.04)]">
           <h1 className="text-balance text-3xl font-semibold tracking-tight">{title}</h1>

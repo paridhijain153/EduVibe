@@ -20,7 +20,7 @@ export function SiteHeader() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8">
         <div className="flex items-center gap-10">
           <Link to="/" className="text-xl font-bold tracking-tight text-foreground">
-            EduVibe<span className="text-glow">.</span>
+            EduVibe
           </Link>
           <nav className="hidden items-center gap-7 text-sm font-medium text-muted-foreground md:flex">
             <NavLink to="/courses" className={({ isActive }) => `transition-colors hover:text-foreground ${isActive ? "text-foreground" : ""}`}>
@@ -130,7 +130,7 @@ export function SiteFooter() {
       <div className="mx-auto grid max-w-7xl gap-10 px-5 py-14 sm:px-8 md:grid-cols-[1fr_auto_auto]">
         <div>
           <div className="text-xl font-bold tracking-tight">
-            EduVibe<span className="text-glow">.</span>
+            EduVibe
           </div>
           <p className="mt-3 max-w-xs text-sm text-muted-foreground">
             A quiet space for deep focus. Curated curricula from leading practitioners.

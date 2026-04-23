@@ -31,7 +31,7 @@ export const Route = {
 };
 
 export default function _Page() {
-  useEffect(() => { document.title = "EduVibe — Learn Anything Anywhere"; }, []);
+  useEffect(() => { document.title = "Learn Anything Anywhere"; }, []);
   return <HomePage />;
 }
 
