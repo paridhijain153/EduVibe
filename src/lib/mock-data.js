@@ -34,7 +34,7 @@ export const SEED_USERS = [
 {
   id: "u-admin",
   name: "Ada Admin",
-  email: "admin@lumen.edu",
+  email: "admin@eduvibe.edu",
   role: "admin",
   avatarColor: "#E89A4F",
   createdAt: "2025-01-01T00:00:00Z"
@@ -42,7 +42,7 @@ export const SEED_USERS = [
 {
   id: "u-thorne",
   name: "Dr. Elias Thorne",
-  email: "thorne@lumen.edu",
+  email: "thorne@eduvibe.edu",
   role: "instructor",
   avatarColor: "#6B635A",
   createdAt: "2025-01-02T00:00:00Z"
@@ -50,7 +50,7 @@ export const SEED_USERS = [
 {
   id: "u-vance",
   name: "Clara Vance",
-  email: "clara@lumen.edu",
+  email: "clara@eduvibe.edu",
   role: "instructor",
   avatarColor: "#2C2825",
   createdAt: "2025-01-03T00:00:00Z"
@@ -58,7 +58,7 @@ export const SEED_USERS = [
 {
   id: "u-rook",
   name: "Julian Rook",
-  email: "julian@lumen.edu",
+  email: "julian@eduvibe.edu",
   role: "instructor",
   avatarColor: "#A37454",
   createdAt: "2025-01-04T00:00:00Z"
@@ -66,7 +66,7 @@ export const SEED_USERS = [
 {
   id: "u-student",
   name: "Sam Student",
-  email: "sam@lumen.edu",
+  email: "sam@eduvibe.edu",
   role: "student",
   avatarColor: "#E89A4F",
   createdAt: "2025-01-05T00:00:00Z"

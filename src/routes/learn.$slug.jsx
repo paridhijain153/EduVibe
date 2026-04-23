@@ -30,7 +30,7 @@ export const Route = {
 };
 
 export default function _Page() {
-  useEffect(() => { document.title = "Learning: ${params.slug} — Lumen"; }, []);
+  useEffect(() => { document.title = "Learning: ${params.slug} — EduVibe"; }, []);
   return <LearnPage />;
 }
 

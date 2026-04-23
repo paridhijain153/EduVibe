@@ -35,7 +35,7 @@ export const Route = {
 };
 
 export default function _Page() {
-  useEffect(() => { document.title = "Analytics — Instructor — Lumen"; }, []);
+  useEffect(() => { document.title = "Analytics — Instructor — EduVibe"; }, []);
   return <_PageInline />;
 }
 

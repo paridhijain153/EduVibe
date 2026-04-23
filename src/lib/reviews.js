@@ -3,7 +3,7 @@
 
 import { Courses } from "./store";
 
-const KEY = "lumen.reviews";
+const KEY = "eduvibe.reviews";
 
 function read() {
   if (typeof window === "undefined") return [];

@@ -17,7 +17,7 @@ export const Route = {
 };
 
 export default function _Page() {
-  useEffect(() => { document.title = "Mentors — Lumen"; }, []);
+  useEffect(() => { document.title = "Mentors — EduVibe"; }, []);
   return <InstructorsPage />;
 }
 

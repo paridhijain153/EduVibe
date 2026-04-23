@@ -169,51 +169,6 @@ function HomePage() {
         </div>
       </section>
 
-      {/* TEACH WITH EDUVIBE */}
-      <section className="mx-auto max-w-7xl px-5 py-24 sm:px-8">
-        <div className="overflow-hidden rounded-3xl bg-foreground p-8 text-background sm:p-14">
-          <div className="grid items-center gap-10 md:grid-cols-2">
-            <div>
-              <div className="mb-3 text-xs font-semibold uppercase tracking-widest text-background/60">
-                For instructors
-              </div>
-              <h2 className="text-balance text-3xl font-semibold tracking-tight sm:text-4xl">
-                Teach a craft you've spent years refining.
-              </h2>
-              <p className="mt-4 max-w-md text-background/70">
-                Build courses with a beautiful authoring tool. Set your price. Reach learners
-                serious about getting better.
-              </p>
-              <Link
-                to="/signup"
-                className="mt-8 inline-flex items-center gap-2 rounded-full bg-glow px-6 py-3 text-sm font-medium text-background transition-colors hover:bg-glow/90">
-                
-                Apply to teach
-                <ArrowRight className="size-4" />
-              </Link>
-            </div>
-            <div className="grid grid-cols-2 gap-4 text-sm">
-              {[
-              { v: "85%", l: "Avg revenue share" },
-              { v: "40k", l: "Active learners" },
-              { v: "$2.1M", l: "Paid out in 2025" },
-              { v: "120+", l: "Mentors worldwide" }].
-              map((s) =>
-              <div
-                key={s.l}
-                className="rounded-2xl border border-background/10 bg-background/5 p-5">
-                
-                  <div className="text-2xl font-semibold tracking-tight sm:text-3xl">{s.v}</div>
-                  <div className="mt-1 text-xs uppercase tracking-widest text-background/60">
-                    {s.l}
-                  </div>
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
-      </section>
-
       <SiteFooter />
     </div>);
 
