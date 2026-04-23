@@ -113,3 +113,5 @@ export {
   AlertDialogDescription,
   AlertDialogAction,
   AlertDialogCancel };
+
+  // This file is a re-export of the AlertDialog component from Radix UI, with some additional styling and variants for the buttons. It provides a convenient way to use the AlertDialog component in your application with consistent styling.
