@@ -28,7 +28,7 @@ export const Route = {
 };
 
 export default function _Page() {
-  useEffect(() => { document.title = "Instructor — Lumen"; }, []);
+  useEffect(() => { document.title = "Instructor — EduVibe"; }, []);
   return <_PageInline />;
 }
 
@@ -73,7 +73,7 @@ function Inner() {
       {myCourses.length === 0 ?
       <EmptyCard
         title="No courses yet"
-        body="Create your first course to start teaching on Lumen."
+        body="Create your first course to start teaching on EduVibe."
         ctaHref="/instructor/new"
         ctaLabel="Create course" /> :
 

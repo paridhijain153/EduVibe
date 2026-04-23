@@ -20,7 +20,7 @@ export function SiteHeader() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8">
         <div className="flex items-center gap-10">
           <Link to="/" className="text-xl font-bold tracking-tight text-foreground">
-            Lumen<span className="text-glow">.</span>
+            EduVibe<span className="text-glow">.</span>
           </Link>
           <nav className="hidden items-center gap-7 text-sm font-medium text-muted-foreground md:flex">
             <NavLink to="/courses" className={({ isActive }) => `transition-colors hover:text-foreground ${isActive ? "text-foreground" : ""}`}>
@@ -127,10 +127,10 @@ export function SiteHeader() {
 export function SiteFooter() {
   return (
     <footer className="border-t border-foreground/5 bg-background">
-      <div className="mx-auto grid max-w-7xl gap-10 px-5 py-14 sm:px-8 md:grid-cols-4">
+      <div className="mx-auto grid max-w-7xl gap-10 px-5 py-14 sm:px-8 md:grid-cols-[1fr_auto_auto]">
         <div>
           <div className="text-xl font-bold tracking-tight">
-            Lumen<span className="text-glow">.</span>
+            EduVibe<span className="text-glow">.</span>
           </div>
           <p className="mt-3 max-w-xs text-sm text-muted-foreground">
             A quiet space for deep focus. Curated curricula from leading practitioners.
@@ -140,8 +140,7 @@ export function SiteFooter() {
           title="Learn"
           links={[
           { label: "Catalog", to: "/courses" },
-          { label: "Mentors", to: "/instructors" },
-          { label: "Pricing", to: "/courses" }]
+          { label: "Mentors", to: "/instructors" }]
           } />
         
         <FooterCol
@@ -152,17 +151,9 @@ export function SiteFooter() {
           { label: "Dashboard", to: "/dashboard" }]
           } />
         
-        <FooterCol
-          title="Company"
-          links={[
-          { label: "About", to: "/" },
-          { label: "Contact", to: "/" },
-          { label: "Privacy", to: "/" }]
-          } />
-        
       </div>
       <div className="border-t border-foreground/5 px-5 py-5 text-center text-xs text-muted-foreground sm:px-8">
-        © {new Date().getFullYear()} Lumen Learning Co. All rights reserved.
+        © {new Date().getFullYear()} EduVibe Learning Co. All rights reserved.
       </div>
     </footer>);
 

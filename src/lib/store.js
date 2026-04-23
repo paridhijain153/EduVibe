@@ -14,16 +14,16 @@
 import { SEED_COURSES, SEED_USERS } from "./mock-data";
 
 const KEYS = {
-  users: "lumen.users",
-  courses: "lumen.courses",
-  enrollments: "lumen.enrollments",
-  transactions: "lumen.transactions",
-  wishlist: "lumen.wishlist",
-  passwords: "lumen.passwords",
-  session: "lumen.session",
-  pendingOtp: "lumen.otp",
-  quizAttempts: "lumen.quizAttempts",
-  seedVersion: "lumen.seedVersion"
+  users: "eduvibe.users",
+  courses: "eduvibe.courses",
+  enrollments: "eduvibe.enrollments",
+  transactions: "eduvibe.transactions",
+  wishlist: "eduvibe.wishlist",
+  passwords: "eduvibe.passwords",
+  session: "eduvibe.session",
+  pendingOtp: "eduvibe.otp",
+  quizAttempts: "eduvibe.quizAttempts",
+  seedVersion: "eduvibe.seedVersion"
 };
 
 // Bump this when SEED_COURSES change so users get fresh content.
@@ -63,11 +63,11 @@ function ensureSeed() {
   if (!window.localStorage.getItem(KEYS.wishlist)) write(KEYS.wishlist, []);
   if (!window.localStorage.getItem(KEYS.passwords)) {
     write(KEYS.passwords, {
-      "admin@lumen.edu": "demo1234",
-      "thorne@lumen.edu": "demo1234",
-      "clara@lumen.edu": "demo1234",
-      "julian@lumen.edu": "demo1234",
-      "sam@lumen.edu": "demo1234"
+      "admin@eduvibe.edu": "demo1234",
+      "thorne@eduvibe.edu": "demo1234",
+      "clara@eduvibe.edu": "demo1234",
+      "julian@eduvibe.edu": "demo1234",
+      "sam@eduvibe.edu": "demo1234"
     });
   }
   if (needsRefresh) window.localStorage.setItem(KEYS.seedVersion, SEED_VERSION);
@@ -239,7 +239,7 @@ export const Enrollments = {
 
 
 export const COUPONS = [
-{ code: "LUMEN10", percentOff: 10, description: "10% off — welcome to Lumen" },
+{ code: "EDUVIBE10", percentOff: 10, description: "10% off — welcome to EduVibe" },
 { code: "STUDENT25", percentOff: 25, description: "25% student discount" },
 { code: "FOUNDER50", percentOff: 50, description: "50% founders' offer" }];
 

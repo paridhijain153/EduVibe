@@ -7,7 +7,7 @@ export function downloadInvoice(tx) {
   const user = Users.byId(tx.userId);
   const course = Courses.byId(tx.courseId);
   if (!user || !course) return;
-  buildInvoicePdf(tx, user, course).save(`Lumen-Invoice-${tx.invoiceNumber}.pdf`);
+  buildInvoicePdf(tx, user, course).save(`EduVibe-Invoice-${tx.invoiceNumber}.pdf`);
 }
 
 function buildInvoicePdf(tx, user, course) {
@@ -24,7 +24,7 @@ function buildInvoicePdf(tx, user, course) {
   doc.setFont("helvetica", "bold");
   doc.setTextColor(250, 248, 244);
   doc.setFontSize(20);
-  doc.text("LUMEN", 48, 38);
+  doc.text("EDUVIBE", 48, 38);
   doc.setFont("helvetica", "normal");
   doc.setFontSize(9);
   doc.setTextColor(232, 154, 79);
@@ -144,7 +144,7 @@ function buildInvoicePdf(tx, user, course) {
   doc.setFontSize(8);
   doc.setTextColor(160, 150, 140);
   doc.text(
-    "Thank you for learning with Lumen. This invoice was generated for a sandbox transaction.",
+    "Thank you for learning with EduVibe. This invoice was generated for a sandbox transaction.",
     W / 2,
     doc.internal.pageSize.getHeight() - 32,
     { align: "center" }

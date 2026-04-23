@@ -3,7 +3,7 @@ import { jsPDF } from "jspdf";
 
 import { Courses, Users, Enrollments, progressFor } from "./store";
 
-const KEY = "lumen.certificates";
+const KEY = "eduvibe.certificates";
 
 
 
@@ -59,13 +59,13 @@ export const Certificates = {
   }
 };
 
-/** Build and trigger download of a Lumen-branded completion certificate. */
+/** Build and trigger download of an EduVibe-branded completion certificate. */
 export function downloadCertificate(cert) {
   const user = Users.byId(cert.userId);
   const course = Courses.byId(cert.courseId);
   if (!user || !course) return;
   generateCertificatePdf(cert, user, course).save(
-    `Lumen-Certificate-${course.slug}-${user.name.replace(/\s+/g, "-")}.pdf`
+    `EduVibe-Certificate-${course.slug}-${user.name.replace(/\s+/g, "-")}.pdf`
   );
 }
 
@@ -93,7 +93,7 @@ function generateCertificatePdf(cert, user, course) {
   doc.setFont("helvetica", "bold");
   doc.setFontSize(18);
   doc.setTextColor(45, 40, 36);
-  doc.text("LUMEN", W / 2, 90, { align: "center" });
+  doc.text("EDUVIBE", W / 2, 90, { align: "center" });
   doc.setFont("helvetica", "normal");
   doc.setFontSize(9);
   doc.setTextColor(120, 110, 100);
