@@ -142,7 +142,7 @@ const cognitive = {
   thumbnail: "from-amber-200 to-rose-300",
   image: imgCognitive,
   instructorId: "u-thorne",
-  instructorName: "Dr. Elias Thorne",
+  instructorName: "Dr. Rahul",
   rating: 4.8,
   ratingCount: 1240,
   enrolledCount: 8420,
